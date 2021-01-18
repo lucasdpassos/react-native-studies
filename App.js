@@ -1,16 +1,27 @@
-import React, { Component } from 'react'
-import { Text } from 'react-native'
+import React from "react";
+import { View, Text } from "react-native";
+import styled from 'styled-components/native'
 
-export default class Estudos extends Component {
+const Background = styled.SafeAreaView` 
+  background-color:black;
+  width:100%;
+  height:100%;
+`
 
-  render() {
+const BgH1 = styled.Text`
+  color: azure;
+  font-size:20px;
+  margin: 0 auto;
 
-    return (
+`
 
-      <Text>Olá Mundo222</Text>
+const Page = () => {
+  return (
 
-    )
+    <Background>
+      <BgH1>Pegar uma borracha de apagar bits</BgH1>
+    </Background>
+  );
+};
 
-  }
-
-}
+export default Page;
